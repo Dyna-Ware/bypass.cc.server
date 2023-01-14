@@ -36,6 +36,7 @@ Bow aimbot
 local server = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local client = loadstring(game:HttpGet('https://raw.githubusercontent.com/Dyna-Ware/bypass.cc.client/main/client'))()
 local version 
+local clientdatafunctions
 
 --------------------------------------------------------------------
 -----------------LOCALS---------------------------------------------
@@ -134,6 +135,12 @@ local InfStamina = Blatant:CreateToggle({
 local I2 = Blatant:CreateLabel("   ")
 -- destroy ui
 local destroyui = Blatant:CreateButton({
+   Name = "Destroy UI",
+   Callback = function()
+      server:Destroy()
+   end,
+})
+local destroyui2 = Blatant:CreateButton({
    Name = "Destroy UI",
    Callback = function()
       server:Destroy()
