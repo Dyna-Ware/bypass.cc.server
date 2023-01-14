@@ -1,0 +1,149 @@
+--[[
+  mm                                                                         
+ m@@                                                                         
+  @@                                                                         
+  @@m@@@@m  *@@*   *@@**@@@@@@@@m  m@*@@m   m@@*@@@ m@@*@@@   m@@*@@  m@@*@@ 
+  @@    *@@   @@   m@    @@   *@@ @@   @@   @@   ** @@   **  @@*  @@ @@*  @@ 
+  !@     @@    @@ m!     !@    @@  m@@@!@   *@@@@@m *@@@@@m  @!      @!      
+  !!!   m@!     @@!      !@    !@ @!   !@        @@      @@  @!m    m@!m    m
+  !!     !!     @!!      !@!   !!  !!!!:!   *!   @! *!   @!  !!      !!      
+  :!!   !!!     !!:      !@   !!! !!   :!   !!   !! !!   !!!!!:!    !!:!    !
+  : : : ::      !!       :!: : :  :!: : !:  : :!:   : :!:  :  : : :   : : :  
+              ::!        ::                                                  
+            :::        : : ::                                                
+
+
+                        made for the survival game in 2023.
+
+
+todo:
+
+Auto farm crops
+Kill aura
+Destroy structures?
+ESP
+Bow aimbot
+
+
+]]--
+
+
+
+--------------------------------------------------------------------
+-----------------lOADSTRING-----------------------------------------
+--------------------------------------------------------------------
+
+local server = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local client = loadstring(game:HttpGet('https://raw.githubusercontent.com/Dyna-Ware/bypass.cc.client/main/client'))()
+local version 
+
+--------------------------------------------------------------------
+-----------------LOCALS---------------------------------------------
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+-----------------WINDOW DATA----------------------------------------
+--------------------------------------------------------------------
+
+
+local Window = server:CreateWindow({
+   Name = "Bypass.cc | 1.3.5, V2",
+   LoadingTitle = "Bypass.cc 4 eva!",
+   LoadingSubtitle = "loading bypass.cc v2 1.3.5",
+   ConfigurationSaving = {
+      Enabled = true, -- disable for no config sys
+      FolderName = Francium, 
+      FileName = "bypass Hub!"
+
+--------------------------------------------------------------------
+-----------------DISCORD INVITE-------------------------------------
+--------------------------------------------------------------------
+
+
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "q", 
+      RememberJoins = true 
+
+--------------------------------------------------------------------
+-----------------------KEY SYSTEM-----------------------------------
+--------------------------------------------------------------------
+
+   },
+   KeySystem = true, 
+   KeySettings = {
+      Title = "bypass.cc",
+      Subtitle = "key now",
+      Note = "script paid idk like 5 bucks",
+      FileName = "bypass.cc.datakeyfile",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = "z4v4YWH248"
+   }
+})
+
+
+--// Main Tabs
+--------------------------------------------------------------------
+local Blatant = Window:CreateTab("Blatant", 4483362458)  -- tab
+local Blatant1 = Blatant:CreateSection("Blatant cheats") -- section
+--------------------------------------------------------------------
+local Local = Window:CreateTab("Localplayer", 11896744496) -- tab
+local Local1 = Local:CreateSection("Localplayer cheats") -- section
+--------------------------------------------------------------------
+local Visual = Window:CreateTab("Visual", 4483362458) -- tab
+local Visual1 = Visual:CreateSection("Visual cheats") -- section
+--------------------------------------------------------------------
+local Credits = Window:CreateTab("Updates", 4483362458) -- tab
+local Credits1 = Credits:CreateSection("MADE FOR 1.3.5!") -- section
+--------------------------------------------------------------------
+
+-- Speed Hax
+local SpeedHacks = Blatant:CreateToggle({
+   Name = "Speed",
+   CurrentValue = false,
+   Flag = "SHFlag", 
+   Callback = function(Value)
+  
+   end,
+})
+
+local SpeedHacksSpeed = Blatant:CreateSlider({
+   Name = "Value",
+   Range = {0, 30},
+   Increment = 1,
+   Suffix = "Is how fast u are",
+   CurrentValue = 16,
+   Flag = "SHSliderFlag", 
+   Callback = function(Value)
+   
+  
+   end,
+})
+local I1 = Blatant:CreateLabel("   ")
+--INF STAMINA
+local InfStamina = Blatant:CreateToggle({
+   Name = "Infinite Stamina",
+   CurrentValue = false,
+   Flag = "StaminaFlag", 
+   Callback = function(Value)
+   
+   end,
+})
+local I2 = Blatant:CreateLabel("   ")
+-- destroy ui
+local destroyui = Blatant:CreateButton({
+   Name = "Destroy UI",
+   Callback = function()
+      server:Destroy()
+   end,
+})
+--------------------------------------------------------------------
+-----------------------DONT TOUCH!----------------------------------
+--------------------------------------------------------------------
+local u3 = Credits:CreateParagraph({Title = "14.1.2023", Content = "Client-Sided edits"})
+local u2 = Credits:CreateParagraph({Title = "14.1.2023", Content = "AC Bypass"})
+local u1 = Credits:CreateParagraph({Title = "made on the 14.1.2023", Content = "2 awesome bypassers"})
+
+server:LoadConfiguration() -- makes configuration for the people that are lazy to set their shit automaticly <3
