@@ -140,12 +140,7 @@ local destroyui = Blatant:CreateButton({
       server:Destroy()
    end,
 })
-local destroyui2 = Blatant:CreateButton({
-   Name = "Destroy UI",
-   Callback = function()
-      server:Destroy()
-   end,
-})
+
 --------------------------------------------------------------------
 -----------------------DONT TOUCH!----------------------------------
 --------------------------------------------------------------------
